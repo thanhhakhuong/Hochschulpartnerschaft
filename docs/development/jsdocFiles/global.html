@@ -1,0 +1,5939 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>JSDoc: Global</title>
+
+    <script src="scripts/prettify/prettify.js"> </script>
+    <script src="scripts/prettify/lang-css.js"> </script>
+    <!--[if lt IE 9]>
+      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <link type="text/css" rel="stylesheet" href="styles/prettify-tomorrow.css">
+    <link type="text/css" rel="stylesheet" href="styles/jsdoc-default.css">
+</head>
+
+<body>
+
+<div id="main">
+
+    <h1 class="page-title">Global</h1>
+
+    
+
+
+
+
+<section>
+
+<header>
+    
+        <h2></h2>
+        
+    
+</header>
+
+<article>
+    <div class="container-overview">
+    
+        
+
+        
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+        
+    
+    </div>
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+        <h3 class="subsection-title">Methods</h3>
+
+        
+            
+
+    
+
+    
+    <h4 class="name" id="addButtonEvent"><span class="type-signature"></span>addButtonEvent<span class="signature">()</span><span class="type-signature"></span></h4>
+    
+
+    
+
+
+
+<div class="description">
+    <p>Button Event für den Button 'Bearbeiten' für die Hochschulen.
+Wird der Button gedrückt merkt sich die Funktion die ID der Zeile in der sich die Hochschule in der Tabelle befindet
+und ruft die Funktionenn loadAgreements() und loadModal() mit dieser ID auf.</p>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="institute_modal_edit_general.js.html">institute_modal_edit_general.js</a>, <a href="institute_modal_edit_general.js.html#line5">line 5</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+            
+
+    
+
+    
+    <h4 class="name" id="addFilterChangeEvents"><span class="type-signature"></span>addFilterChangeEvents<span class="signature">()</span><span class="type-signature"></span></h4>
+    
+
+    
+
+
+
+<div class="description">
+    <p>Immer wenn einer der Filter der Seite Institute.html durch den Nutzer verändert wurde,
+sendet die Funktion einen Post-Request mit den aktuell gewählten Filtern an app.py
+und erhält die so gefilterten Hochschul-Daten aus der Datenbank zurück. +
+Außerdem werden alle Filter auf den ursprungszustand zurückgesetzt, wenn der Nutzer
+den Zurücksetzen-Button drückt.</p>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="filter_functionality.js.html">filter_functionality.js</a>, <a href="filter_functionality.js.html#line8">line 8</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+            
+
+    
+
+    
+    <h4 class="name" id="addNewAgreement"><span class="type-signature"></span>addNewAgreement<span class="signature">()</span><span class="type-signature"></span></h4>
+    
+
+    
+
+
+
+<div class="description">
+    <p>Wird durch instituteButtonEvents() (Button 'Vertrag Speichern') und makeRowClickable() aufgerufen
+Speichern der durch den Nutzer ins Formular eingetragenen Daten eines neuen Vertrags in SessionStorage.
+Formular: 'Hochschule bearbeiten' &gt; 'Partnerschaftsverträgeansicht' &gt; 'neuen Vertrag anlegen'</p>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="institute_modal_edit_agreement.js.html">institute_modal_edit_agreement.js</a>, <a href="institute_modal_edit_agreement.js.html#line320">line 320</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+            
+
+    
+
+    
+    <h4 class="name" id="addNewRestToNewAg"><span class="type-signature"></span>addNewRestToNewAg<span class="signature">()</span><span class="type-signature"></span></h4>
+    
+
+    
+
+
+
+<div class="description">
+    <p>Diese Funktion wird aufgerufen, wenn eine neue Restriktion zu einem neuen Agreement hinzugefügt werden soll
+Die übergebene Restriktion wird zu dem zugehörigen Mobilityagreement zugeordnet.
+Es werden alle Agreements in der aktuellen SessioStorage überprüft.
+Falls es bereits Restriktions für das Agreement gibt, wird die neue Restriktion hinzugefügt (push)
+anderfalls ist die Restriktion das erste Objekt für diesen Parameter</p>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="institute_modal_edit_general.js.html">institute_modal_edit_general.js</a>, <a href="institute_modal_edit_general.js.html#line294">line 294</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+            
+
+    
+
+    
+    <h4 class="name" id="agreementFilter"><span class="type-signature"></span>agreementFilter<span class="signature">()</span><span class="type-signature"></span></h4>
+    
+
+    
+
+
+
+<div class="description">
+    <p>Funktion wird die Auswahl des Nutzers aus dem Filter Vertragstyp im Modal 'Hochschule bearbeiten' übergeben.
+Die Verträge in der Tabelle werden nur dann angezeigt wenn sie der Auswahl im Filter 'Vertragstyp' entsprechen.</p>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="institute_modal_edit_agreement.js.html">institute_modal_edit_agreement.js</a>, <a href="institute_modal_edit_agreement.js.html#line150">line 150</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+            
+
+    
+
+    
+    <h4 class="name" id="cacheMentors"><span class="type-signature"></span>cacheMentors<span class="signature">()</span><span class="type-signature"></span></h4>
+    
+
+    
+
+
+
+<div class="description">
+    <p>Funktion wird durch loadMentor() aufgerufen
+Ihr werden die Mentorendaten aus der Datenbank übergeben
+Mentorendaten werden lokal auf dem Rechner im Browser zwischengespeichert um einen einfacheren Zugriff zu ermöglichen</p>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="mentor_main.js.html">mentor_main.js</a>, <a href="mentor_main.js.html#line40">line 40</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+            
+
+    
+
+    
+    <h4 class="name" id="checkAdmin"><span class="type-signature"></span>checkAdmin<span class="signature">()</span><span class="type-signature"></span></h4>
+    
+
+    
+
+
+
+<div class="description">
+    <p>Funktion prüft welcher Nutzer die Anwendung gerade ausführt (normaler Nutzer oder Admin mit Löschrechten)</p>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="delete_helper.js.html">delete_helper.js</a>, <a href="delete_helper.js.html#line44">line 44</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+            
+
+    
+
+    
+    <h4 class="name" id="checkIfNew"><span class="type-signature"></span>checkIfNew<span class="signature">()</span><span class="type-signature"></span></h4>
+    
+
+    
+
+
+
+<div class="description">
+    <p>Wenn im &quot;Bearbeiten&quot;-Modal der &quot;Speichern&quot;-Button gedrückt wird, wird diese Funktion ausgeführt.
+Sie überprüft, ob es sich bei den eingegebenen Daten um neue Agreements und/oder Restriktions handelt.
+Falls ja, wird jeweils ein Alert und die Daten in der console ausgegeben.</p>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="institute_modal_edit_general.js.html">institute_modal_edit_general.js</a>, <a href="institute_modal_edit_general.js.html#line239">line 239</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+            
+
+    
+
+    
+    <h4 class="name" id="checkIfUpdated"><span class="type-signature"></span>checkIfUpdated<span class="signature">()</span><span class="type-signature"></span></h4>
+    
+
+    
+
+
+
+<div class="description">
+    <p>Wenn im &quot;Bearbeiten&quot;-Modal der &quot;Speichern&quot;-Button gedrückt wird, wird diese Funktion ausgeführt.
+Sie prüft, ob neue Einträge bezüglich Hochschule, Agreement oder Restriktion getätigt wurden.
+Falls dem so ist, werden die geänderten Daten über app.py an die Datenbank gesendet.
+Für jede der drei Daten wird eine eigene URL in app.py angesteuert:
+/changeData/updateInstitute = für geänderte Hochschulen
+/changeData/updateAgreement = für geänderte Hochschulvereinabrungen
+/changeData/updateRestriction = für geänderte Restriktionen</p>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="institute_modal_edit_general.js.html">institute_modal_edit_general.js</a>, <a href="institute_modal_edit_general.js.html#line177">line 177</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+            
+
+    
+
+    
+    <h4 class="name" id="checkInput"><span class="type-signature"></span>checkInput<span class="signature">()</span><span class="type-signature"></span></h4>
+    
+
+    
+
+
+
+<div class="description">
+    <p>Prüft alle Einträge eines veränderten/neuen Hochschulobjektes auf 'null'-Werte und ändert diese
+gegebenenfalls auf einen leeren String ''.</p>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="institute_modal_edit_general.js.html">institute_modal_edit_general.js</a>, <a href="institute_modal_edit_general.js.html#line156">line 156</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+            
+
+    
+
+    
+    <h4 class="name" id="checkNewRestForNewAgreement"><span class="type-signature"></span>checkNewRestForNewAgreement<span class="signature">()</span><span class="type-signature"></span></h4>
+    
+
+    
+
+
+
+<div class="description">
+    <p>Falls innerhalb der Funktion checkIfNew() festgestellt wird, dass für ein neu angelegtes Agreement
+eine neue Restriktion angelegt werden soll, wird diese Funktion ausgeführt.
+Es werden alle Restriktionen in der aktuellen SessionStorage überprüft.
+Falls eine Restriktion zu einem neuen Mobilityagreement gehört, füge diese Restriktion dem Agreement hinzu (Aufruf: adddNewRestToNewAg() Funktion)
+Falls eine Restriktion nicht zu einem neuen Mobilityagreement gehören verbleiben sie in der SessionStorage
+gehören alle neuen Restriktion zu einem neuen Agreement wird das SessionStorage Item &quot;newRestrictions&quot; geleert</p>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="institute_modal_edit_general.js.html">institute_modal_edit_general.js</a>, <a href="institute_modal_edit_general.js.html#line271">line 271</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+            
+
+    
+
+    
+    <h4 class="name" id="checkProp"><span class="type-signature"></span>checkProp<span class="signature">()</span><span class="type-signature"></span></h4>
+    
+
+    
+
+
+
+<div class="description">
+    <p>Funktion prüft, ob Checkbox 'Agreement Inaktiv?' ausgewählt wurde oder nicht.
+Gibt dementsprechend 1 oder 0 zurück.</p>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="institute_modal_edit_agreement.js.html">institute_modal_edit_agreement.js</a>, <a href="institute_modal_edit_agreement.js.html#line227">line 227</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+            
+
+    
+
+    
+    <h4 class="name" id="clearAgreementSpace"><span class="type-signature"></span>clearAgreementSpace<span class="signature">()</span><span class="type-signature"></span></h4>
+    
+
+    
+
+
+
+<div class="description">
+    <p>Wird durch instituteButtonEvents() ausgelöst.
+Leert das Formular im Modal 'Partnerhochschulen bearbeiten' Ansicht 'Partnerschaftsverträge'</p>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="institute_modal_edit_agreement.js.html">institute_modal_edit_agreement.js</a>, <a href="institute_modal_edit_agreement.js.html#line309">line 309</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+            
+
+    
+
+    
+    <h4 class="name" id="clearSessionStorage"><span class="type-signature"></span>clearSessionStorage<span class="signature">()</span><span class="type-signature"></span></h4>
+    
+
+    
+
+
+
+<div class="description">
+    <p>Funktion löscht alle Einträge aus der aktuellen sessionStorage</p>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="institute_modal_edit_general.js.html">institute_modal_edit_general.js</a>, <a href="institute_modal_edit_general.js.html#line97">line 97</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+            
+
+    
+
+    
+    <h4 class="name" id="createAgreementObject"><span class="type-signature"></span>createAgreementObject<span class="signature">()</span><span class="type-signature"></span></h4>
+    
+
+    
+
+
+
+<div class="description">
+    <p>Funktion wird in Funktion insertAgreementInTable() aufgerufen und erzeugt ein Vertragstyp entsprechend der übergebenen Daten</p>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="institute_modal_edit_agreement.js.html">institute_modal_edit_agreement.js</a>, <a href="institute_modal_edit_agreement.js.html#line108">line 108</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+            
+
+    
+
+    
+    <h4 class="name" id="createDifferenceArray"><span class="type-signature"></span>createDifferenceArray<span class="signature">()</span><span class="type-signature"></span></h4>
+    
+
+    
+
+
+
+<div class="description">
+    <p>Diese Funktion wird innerhalb der Funktion checkIfUpdated() aufgerufen.
+Sie überprüft alle Keys der übergebenen Objekte auf unterschiede.
+Falls mindestens einer der Keys des neuen Objekts sich von dem alten Objekt unterscheidet
+werden dieses neuen Keys im Objekt newestAttr gespeichert und returned.</p>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="institute_modal_edit_general.js.html">institute_modal_edit_general.js</a>, <a href="institute_modal_edit_general.js.html#line316">line 316</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+            
+
+    
+
+    
+    <h4 class="name" id="createNewAgreementObj"><span class="type-signature"></span>createNewAgreementObj<span class="signature">()</span><span class="type-signature"></span></h4>
+    
+
+    
+
+
+
+<div class="description">
+    <p>Funktion wird durch ButtonEvent ('Neuen Vertrag anlegen'-Button)
+Bereitet das Formular zur Eingabe der Daten des neuen Vertrags vor
+Erzeugt ein JSON-Object für den neu angelegten Vertrag und speichert die Daten in SessionStorage</p>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="institute_modal_edit_agreement.js.html">institute_modal_edit_agreement.js</a>, <a href="institute_modal_edit_agreement.js.html#line345">line 345</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+            
+
+    
+
+    
+    <h4 class="name" id="createObjectInstitute"><span class="type-signature"></span>createObjectInstitute<span class="signature">()</span><span class="type-signature"></span></h4>
+    
+
+    
+
+
+
+<div class="description">
+    <p>Funktion erzeugt ein JSON-Object einer Hochschule mit den übergebenen Daten</p>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="institute_modal_edit_general.js.html">institute_modal_edit_general.js</a>, <a href="institute_modal_edit_general.js.html#line71">line 71</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+            
+
+    
+
+    
+    <h4 class="name" id="createRestriction"><span class="type-signature"></span>createRestriction<span class="signature">()</span><span class="type-signature"></span></h4>
+    
+
+    
+
+
+
+<div class="description">
+    <p>Erzeugen einer Restriktion für ein bestimmtes Agreement/Vertragstyp (ag_ID) anhand der übergebenen restrictions.</p>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="institute_modal_edit_agreement.js.html">institute_modal_edit_agreement.js</a>, <a href="institute_modal_edit_agreement.js.html#line128">line 128</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+            
+
+    
+
+    
+    <h4 class="name" id="editMentorButton"><span class="type-signature"></span>editMentorButton<span class="signature">()</span><span class="type-signature"></span></h4>
+    
+
+    
+
+
+
+<div class="description">
+    <p>Funktion wird aufgerufen von mentorInsert()
+Dem 'Bearbeiten'-Button wird ein Buttonevent zugewiesen.
+Drückt Nutzer den Button, wird die Funktion loadMentor() mit der ID des gewählten Mentoren aufgerufen.
+Außerdem wird das Modal 'Mentor'-Bearbeiten aufgeklappt</p>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="mentor_modal_edit.js.html">mentor_modal_edit.js</a>, <a href="mentor_modal_edit.js.html#line6">line 6</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+            
+
+    
+
+    
+    <h4 class="name" id="functionalityAgreementFilter"><span class="type-signature"></span>functionalityAgreementFilter<span class="signature">()</span><span class="type-signature"></span></h4>
+    
+
+    
+
+
+
+<div class="description">
+    <p>Speichert die Auswahl des Nutzers im Filter-Dropdown der Verträge im Modal 'Hochschule bearbeiten' und
+ruft die Funktion agreementFilter mit diesem Wert auf.</p>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="institute_modal_edit_agreement.js.html">institute_modal_edit_agreement.js</a>, <a href="institute_modal_edit_agreement.js.html#line137">line 137</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+            
+
+    
+
+    
+    <h4 class="name" id="getCountries"><span class="type-signature"></span>getCountries<span class="signature">()</span><span class="type-signature"> &rarr; {void}</span></h4>
+    
+
+    
+
+
+
+<div class="description">
+    <p>Wenn die Seite Country.html vollständig geladen wurde, wird ein GET-Request an app.py gesendet, um
+Länderdaten aus der Datenbank abzufragen. Wenn die Daten geladen wurde, werden diese an die Funktion
+insertCountries() übergeben.
+See <a href="global.html#insertCountries"><code>insertCountries</code></a></p>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="country_loader.js.html">country_loader.js</a>, <a href="country_loader.js.html#line12">line 12</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h5>Returns:</h5>
+
+        
+
+
+<dl>
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type">void</span>
+
+
+    </dd>
+</dl>
+
+    
+
+
+
+
+
+        
+            
+
+    
+
+    
+    <h4 class="name" id="getRestrictions"><span class="type-signature"></span>getRestrictions<span class="signature">()</span><span class="type-signature"></span></h4>
+    
+
+    
+
+
+
+<div class="description">
+    <p>Funktion wird durch insertRestriction() aufgerufen
+Sie gibt alle Restriktions aus der sessionStorage zurück, die für das aktuell ausgewählte Agreement hinterlegt sind.</p>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="institute_modal_edit_restriction.js.html">institute_modal_edit_restriction.js</a>, <a href="institute_modal_edit_restriction.js.html#line125">line 125</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+            
+
+    
+
+    
+    <h4 class="name" id="getStorageData"><span class="type-signature"></span>getStorageData<span class="signature">()</span><span class="type-signature"></span></h4>
+    
+
+    
+
+
+
+<div class="description">
+    <p>Funktion wird durch insertAgreementInTable() aufgerufen
+Ihr wird ein bestimmter Key der aktuellen SessionStorage sowie die gewünschte ID übergeben.
+Die Funktion ermöglicht es einen bestimmten Eintrag eines bestimmten Keys aus SessionStorage zu laden.</p>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="institute_modal_edit_general.js.html">institute_modal_edit_general.js</a>, <a href="institute_modal_edit_general.js.html#line358">line 358</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+            
+
+    
+
+    
+    <h4 class="name" id="insertAgreement"><span class="type-signature"></span>insertAgreement<span class="signature">()</span><span class="type-signature"></span></h4>
+    
+
+    
+
+
+
+<div class="description">
+    <p>Funktion wird durch loadMentor() aufgerufen
+Die aus der Datenbank geladenen Mentoren-Daten werden in das Bearbeiten-Modal für Mentoren geladen</p>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="mentor_modal_edit.js.html">mentor_modal_edit.js</a>, <a href="mentor_modal_edit.js.html#line63">line 63</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+            
+
+    
+
+    
+    <h4 class="name" id="insertAgreementInformation"><span class="type-signature"></span>insertAgreementInformation<span class="signature">()</span><span class="type-signature"></span></h4>
+    
+
+    
+
+
+
+<div class="description">
+    <p>Wird im Modal 'Partnerhochschulen bearbeiten' Ansicht 'Partnerschaftsverträge' einer der Verträge in der Tabelle
+angeklickt, werden die Daten dieses Vertrages in das Formular geladen.
+Die Daten werden über die Funktion returnAgreement() geladen.</p>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="institute_modal_edit_agreement.js.html">institute_modal_edit_agreement.js</a>, <a href="institute_modal_edit_agreement.js.html#line261">line 261</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+            
+
+    
+
+    
+    <h4 class="name" id="insertAgreementInTable"><span class="type-signature"></span>insertAgreementInTable<span class="signature">()</span><span class="type-signature"></span></h4>
+    
+
+    
+
+
+
+<div class="description">
+    <p>Die in loadAgreements aus der Datenbank geladenen Mobility Agreements werden innerhalb der Tabelle
+im Modal 'Hochschule bearbeiten' bereitgestellt.</p>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="institute_modal_edit_agreement.js.html">institute_modal_edit_agreement.js</a>, <a href="institute_modal_edit_agreement.js.html#line67">line 67</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+            
+
+    
+
+    
+    <h4 class="name" id="insertCountries"><span class="type-signature"></span>insertCountries<span class="signature">(allCountries)</span><span class="type-signature"> &rarr; {void}</span></h4>
+    
+
+    
+
+
+
+<div class="description">
+    <p>Wenn der GET-Request die Länder-Informationen aus der Datenbank geladen hat, wird per HTML eine Tabelle mit den Inhalten erzeugt.</p>
+</div>
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>allCountries</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Object</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><ul>
+<li>enthält jeweils die deutsche und englische Bezeichnung der Länder sowie die Information ob das Land zur Ersasmusvereinbarung gehört (1) oder nicht (0)</li>
+</ul></td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="country_loader.js.html">country_loader.js</a>, <a href="country_loader.js.html#line27">line 27</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h5>Returns:</h5>
+
+        
+
+
+<dl>
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type">void</span>
+
+
+    </dd>
+</dl>
+
+    
+
+
+
+
+
+        
+            
+
+    
+
+    
+    <h4 class="name" id="insertFac"><span class="type-signature"></span>insertFac<span class="signature">(allFaculties)</span><span class="type-signature"></span></h4>
+    
+
+    
+
+
+
+<div class="description">
+    <p>Wenn der GET-Request die Fakultäts-Informationen aus der Datenbank geladen hat, wird per HTML eine Tabelle mit den Inhalten erzeugt.</p>
+</div>
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>allFaculties</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Object</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>-enthält die Namen der Fakultät in Deutsch und Englisch sowie die Anzahl der mit dieser Fakultät bestehenden Verträge</p></td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="faculty_loader.js.html">faculty_loader.js</a>, <a href="faculty_loader.js.html#line20">line 20</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+            
+
+    
+
+    
+    <h4 class="name" id="insertInstitutes"><span class="type-signature"></span>insertInstitutes<span class="signature">()</span><span class="type-signature"></span></h4>
+    
+
+    
+
+
+
+<div class="description">
+    <p>Funktion wird durch addFilterChangeEvents() und loadAll() aufgerufen
+Wenn der GET-Request die Hochschulen-Informationen aus der Datenbank geladen hat, wird per HTML eine Tabelle mit den Inhalten erzeugt.
+Dabei wird zwischen einem normalen Nutzer und einem Admin mit Löschrechten unterschieden
+Handelt es sich beim Nutzer um den Admin werden in der Tabelle außerdem für jede Hochschule ein Lösch-Button sichtbar.</p>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="institutes_main.js.html">institutes_main.js</a>, <a href="institutes_main.js.html#line52">line 52</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+            
+
+    
+
+    
+    <h4 class="name" id="insertMentor"><span class="type-signature"></span>insertMentor<span class="signature">()</span><span class="type-signature"></span></h4>
+    
+
+    
+
+
+
+<div class="description">
+    <p>Funktion wird durch loadMentor() aufgerufen
+Die Daten aus dem Formular 'Mentor hinzufügen' werden sobald der Nutzer den 'Speichern'-Button drückt
+über app.py an die Datenbank gesendet und persistiert.</p>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="mentor_modal_add.js.html">mentor_modal_add.js</a>, <a href="mentor_modal_add.js.html#line5">line 5</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+            
+
+    
+
+    
+    <h4 class="name" id="insertRestriction"><span class="type-signature"></span>insertRestriction<span class="signature">()</span><span class="type-signature"></span></h4>
+    
+
+    
+
+
+
+<div class="description">
+    <p>Funktoin wird durch newRestriction() ('Studiengang Speicher'-Button) und makeRowClickable() aufgerufen
+Wird beim Funktionsaufruf kein Parameter übergeben ist das object = false
+Restriktions bezüglich des vom Nutzer gewählten Vertrags werden im Formular angezeigt.
+Formular: 'Hochschule bearbeiten' &gt; 'Zu Partnerschaftverträge wechseln' &gt; einen Vertrag auswählen &gt; 'Studiengänge'-Button &gt; 'Studiengang speichern'</p>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="institute_modal_edit_restriction.js.html">institute_modal_edit_restriction.js</a>, <a href="institute_modal_edit_restriction.js.html#line37">line 37</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+            
+
+    
+
+    
+    <h4 class="name" id="instituteButtonEvents"><span class="type-signature"></span>instituteButtonEvents<span class="signature">()</span><span class="type-signature"></span></h4>
+    
+
+    
+
+
+
+<div class="description">
+    <p>add-new-restriction = Wird im Modal 'Hochschule Bearbeiten' in der Ansicht zu Partnerschaftsverträgeansicht wechseln' der Button 'Restriktionen' gedrückt,
+öffnet sich ein Formular zur Eingabe der Daten für die neue Restriktion.
+save-new-restriction = 'Speichern' Button ruft newRestricion() Funktion zum Anlegen und Speichern einer neuen Restriktion auf.
+add-new-agreement = Wurde der Button 'Neuen Vertrag anlegen' gedrückt erscheint der Button 'Agreement' speichern. Wird dieser vom Nutzer gedrückt,
+wird ein neues Agreement in die Tabelle gespeichert.
+add_mob_agreement = 'Neuen Vertrag anlegen'-Button im Modal 'Hochschule Bearbeiten' und 'zu Partnerschaftsverträgeansicht wechseln' öffnet das Formular
+zur Eingabe neuer Agreement-Informationen.
+rtn-agreement = im Modal 'Partnerhochschule bearbeiten' im Formular 'Restriktionen' kann über den Button 'Partnerschaftverträge'
+zu der Ansicht 'Partnerschaftsvertäge' zurückgekehrt werden.
+show_restrictions = Anzeige der Restriktionen.
+add_institute_btn = Anlegen eines neues Institutes
+close_modal_add = Schließen des Modals 'Partnerschaften hinzufügen' über 'X' bzw. 'Abbrechen'-Button
+close_modal_restriction = Schließen des Modal 'Restrikionen' über 'X' -Button
+close_modal_edit = Schließen des Modals 'Bearbeiten'</p>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="institute_buttons.js.html">institute_buttons.js</a>, <a href="institute_buttons.js.html#line76">line 76</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+            
+
+    
+
+    
+    <h4 class="name" id="instituteObjectUpdated"><span class="type-signature"></span>instituteObjectUpdated<span class="signature">()</span><span class="type-signature"></span></h4>
+    
+
+    
+
+
+
+<div class="description">
+    <p>Funktion aktualisiert die Hochschul-Daten entsprechend der Einträge in der sessionStorage wenn die Daten
+im Modal 'Hochschule bearbeiten' verändert wurden.</p>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="institute_modal_edit_general.js.html">institute_modal_edit_general.js</a>, <a href="institute_modal_edit_general.js.html#line124">line 124</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+            
+
+    
+
+    
+    <h4 class="name" id="loadAgreements"><span class="type-signature"></span>loadAgreements<span class="signature">()</span><span class="type-signature"></span></h4>
+    
+
+    
+
+
+
+<div class="description">
+    <p>Diese Funktion wird aufgerufen, wenn der &quot;Bearbeiten&quot;-Button der Hochschulen gedrückt wurde
+Funktion sendet einen Post-Request an app.py mit der ID der gewünschte Hochschule.
+Die Funktion erhält dann aus der Datenbank die Mobilityagreements zurück</p>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="institute_modal_edit_agreement.js.html">institute_modal_edit_agreement.js</a>, <a href="institute_modal_edit_agreement.js.html#line7">line 7</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+            
+
+    
+
+    
+    <h4 class="name" id="loadAll"><span class="type-signature"></span>loadAll<span class="signature">()</span><span class="type-signature"></span></h4>
+    
+
+    
+
+
+
+<div class="description">
+    <p>Wenn die Seite institute.html vollständig geladen wurde, wird ein GET-Request an app.py gesendet, um
+Hochschuledaten aus der Datenbank abzufragen.
+Wenn der Nutzer auf den 'Zurücksetzen'-Button gedrückt hat, dann wird der Filter aufgehoben
+und wieder alle Hochschulen in die Tabelle geladen.
+Funktion sendet dazu über app.py eine Abfrage an die Datenbank.</p>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="institutes_main.js.html">institutes_main.js</a>, <a href="institutes_main.js.html#line37">line 37</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+            
+
+    
+
+    
+    <h4 class="name" id="loadCourse"><span class="type-signature"></span>loadCourse<span class="signature">()</span><span class="type-signature"></span></h4>
+    
+
+    
+
+
+
+<div class="description">
+    <p>Wenn die Seite course.html vollständig geladen wurde, wird ein GET-Request an app.py gesendet, um
+Studiengängedaten aus der Datenbank abzufragen.</p>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="course_loader.js.html">course_loader.js</a>, <a href="course_loader.js.html#line7">line 7</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+            
+
+    
+
+    
+    <h4 class="name" id="loadCourseDropdown"><span class="type-signature"></span>loadCourseDropdown<span class="signature">()</span><span class="type-signature"></span></h4>
+    
+
+    
+
+
+
+<div class="description">
+    <p>Wird durch loadCourse() aufgerufen
+Stellt dem Dropdown im Formular 'Studiengänge' die verfügbaren Studiengänge bereit
+Formular: 'Hochschule bearbeiten' &gt; 'Zu Partnerschaftverträge wechseln' &gt; einen Vertrag auswählen &gt; 'Studiengänge'-Button &gt; 'Neuen Studiengang auswäheln &gt; 'Dropdown 'Studiengang auswählen'</p>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="institute_modal_edit_general.js.html">institute_modal_edit_general.js</a>, <a href="institute_modal_edit_general.js.html#line366">line 366</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+            
+
+    
+
+    
+    <h4 class="name" id="loadMentor"><span class="type-signature"></span>loadMentor<span class="signature">()</span><span class="type-signature"></span></h4>
+    
+
+    
+
+
+
+<div class="description">
+    <p>Wenn die Seite mentor.html vollständig geladen wurde, wird ein GET-Request an app.py gesendet, um
+Mentorendaten aus der Datenbank abzufragen.</p>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="mentor_main.js.html">mentor_main.js</a>, <a href="mentor_main.js.html#line6">line 6</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+            
+
+    
+
+    
+    <h4 class="name" id="loadMentor"><span class="type-signature"></span>loadMentor<span class="signature">()</span><span class="type-signature"></span></h4>
+    
+
+    
+
+
+
+<div class="description">
+    <p>Funktion wird durch das ButtonEvent editMentorButton() ('Bearbeiten'-Button eines Mentoren) aufgerufen
+Ein Post-Reqeuest wird über app.py an die Datenbank gesendet und die Daten des gewünschten Mentoren geladen.</p>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="mentor_modal_edit.js.html">mentor_modal_edit.js</a>, <a href="mentor_modal_edit.js.html#line27">line 27</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+            
+
+    
+
+    
+    <h4 class="name" id="loadMentorDropdown"><span class="type-signature"></span>loadMentorDropdown<span class="signature">()</span><span class="type-signature"></span></h4>
+    
+
+    
+
+
+
+<div class="description">
+    <p>Belädt das Dropdown 'Mentor' mit den Inhalten aus der Datenbank</p>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="filter_values_loader.js.html">filter_values_loader.js</a>, <a href="filter_values_loader.js.html#line50">line 50</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+            
+
+    
+
+    
+    <h4 class="name" id="loadModal"><span class="type-signature"></span>loadModal<span class="signature">()</span><span class="type-signature"></span></h4>
+    
+
+    
+
+
+
+<div class="description">
+    <p>Wird der Bearbeiten Button in der Zeile einer Hochschule gedrückt, werden die Daten des ausgewählten Instituts
+aus der Datenbank in das Modal 'Hochschule bearbeiten' geladen und angezeigt</p>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="institute_modal_edit_general.js.html">institute_modal_edit_general.js</a>, <a href="institute_modal_edit_general.js.html#line23">line 23</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+            
+
+    
+
+    
+    <h4 class="name" id="makeRowClickable"><span class="type-signature"></span>makeRowClickable<span class="signature">()</span><span class="type-signature"></span></h4>
+    
+
+    
+
+
+
+<div class="description">
+    <p>Jede Zeile in der Tabelle der Vertragstypen im Modal 'Partnerhochschulen bearbeiten' wird mit einem Event-Listener versehen,
+sodass diese angeklickt werden können. Klickt der Nutzer eine Zeile an wird die ID an die Funktion
+insertAgreementInformation() übergeben sowie die Funktionen insertRestriction() und addNewAgreement() aufgerufen.</p>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="institute_modal_edit_agreement.js.html">institute_modal_edit_agreement.js</a>, <a href="institute_modal_edit_agreement.js.html#line167">line 167</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+            
+
+    
+
+    
+    <h4 class="name" id="mentorButtonFunctionality"><span class="type-signature"></span>mentorButtonFunctionality<span class="signature">()</span><span class="type-signature"></span></h4>
+    
+
+    
+
+
+
+<div class="description">
+    <p>Funktion wird durch loadMentor() aufgerufen
+Für die Buttons auf der Seite Mentoren und im Mentorenmodal werden verschiedene Funktionalitäten bereitgestellt.
+add_mentor_btn = Öffnet Modal 'Mentor Hinzufügen'
+close_modal_edit_mentor = Schließt das Modal 'Bearbeiten' sowohl für X-Button als auch 'Abbrechen'
+close_modal_add_mentor = Schließt das Modal 'Mentor Hinzufügen' sowohl für X-Button als auch 'Abbrechen'</p>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="mentor_main.js.html">mentor_main.js</a>, <a href="mentor_main.js.html#line122">line 122</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+            
+
+    
+
+    
+    <h4 class="name" id="mentorInsert"><span class="type-signature"></span>mentorInsert<span class="signature">()</span><span class="type-signature"></span></h4>
+    
+
+    
+
+
+
+<div class="description">
+    <p>Funktion wird durch loadMentor() aufgerufen
+Wenn der GET-Request die Mentoren-Informationen aus der Datenbank geladen hat,
+wird per HTML eine Tabelle mit den Inhalten erzeugt.</p>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="mentor_main.js.html">mentor_main.js</a>, <a href="mentor_main.js.html#line65">line 65</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+            
+
+    
+
+    
+    <h4 class="name" id="modalEvents"><span class="type-signature"></span>modalEvents<span class="signature">()</span><span class="type-signature"></span></h4>
+    
+
+    
+
+
+
+<div class="description">
+    <p>Wird im Modal 'Partnerhochschule hinzufügen' der Button 'Speichern' gedrückt, werden die Eingaben der Nutzer zusammengefasst
+und an den Server gesendet (per POST Request an '/addInstitute')
+Wird im Modal 'Hochschule Bearbeiten' der Button 'Speichern' gedrückt, werden die Eingaben der Nutzer zusammengefasst
+und an den Server gesendet
+Wird im Modal 'Hochschule Bearbeiten' der Button 'zu Partnerschaftsverträgeansicht wechseln' gedürckt, wird die Ansicht
+mit den Daten zur Hochschule versteckt und dei Seite mit den Daten zu den Partnerschaftsvertägen angezeigt.
+Wird im Modal 'Partnerhochschule hinzufügen' oder im Modal 'Hochschule Bearbeiten' der 'X' bzw. 'Abbrechen' Button gedrückt
+werden die getätigten aber nicht gespeicherten eingaben des Nutzers aus dem Formular gelöscht.</p>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="institute_buttons.js.html">institute_buttons.js</a>, <a href="institute_buttons.js.html#line11">line 11</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+            
+
+    
+
+    
+    <h4 class="name" id="newRestriction"><span class="type-signature"></span>newRestriction<span class="signature">()</span><span class="type-signature"></span></h4>
+    
+
+    
+
+
+
+<div class="description">
+    <p>Wird durch den Speichernbutton bzw. instituteButtonEvents() aufgerufen
+Funktion speichert die durch den Nutzer in das Formular eingegebenen Restriktion-Informationen in der SessionStorage</p>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="institute_modal_edit_restriction.js.html">institute_modal_edit_restriction.js</a>, <a href="institute_modal_edit_restriction.js.html#line5">line 5</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+            
+
+    
+
+    
+    <h4 class="name" id="postData"><span class="type-signature"></span>postData<span class="signature">()</span><span class="type-signature"></span></h4>
+    
+
+    
+
+
+
+<div class="description">
+    <p>Diese Funktion wird durch die Funktion checkIfUpdated() aufgerufen.
+Ihr werden JSON Objekte und eine URL übergeben
+Per Post-Request werden über app.py die neuen bzw. geänderten Daten an dei Datenbank gesendet.</p>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="institute_modal_edit_general.js.html">institute_modal_edit_general.js</a>, <a href="institute_modal_edit_general.js.html#line342">line 342</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+            
+
+    
+
+    
+    <h4 class="name" id="returnAgreement"><span class="type-signature"></span>returnAgreement<span class="signature">()</span><span class="type-signature"></span></h4>
+    
+
+    
+
+
+
+<div class="description">
+    <p>Wird durch die Funktion insertAgreementInformation() aufgerufen
+Dieser Funktion wird die ID des ausgewählten Agreements übergeben.
+Sie stellt der Funktion insertAgreementInformation() die Daten des Agreements bereit.</p>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="institute_modal_edit_agreement.js.html">institute_modal_edit_agreement.js</a>, <a href="institute_modal_edit_agreement.js.html#line283">line 283</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+            
+
+    
+
+    
+    <h4 class="name" id="saveMentorButton"><span class="type-signature"></span>saveMentorButton<span class="signature">()</span><span class="type-signature"></span></h4>
+    
+
+    
+
+
+
+<div class="description">
+    <p>Funktion ist ein Button-Event für den Speichern-Button im Mentoren-Bearbeiten-Modal
+Die bearbeiteten Daten aus dem Bearbeiten-Modal werden zu einem JSON-Object zusammengefasst
+und per Post-Request über app.py an die Datenbankgesendet</p>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="mentor_modal_edit.js.html">mentor_modal_edit.js</a>, <a href="mentor_modal_edit.js.html#line73">line 73</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+            
+
+    
+
+    
+    <h4 class="name" id="searchMentor"><span class="type-signature"></span>searchMentor<span class="signature">()</span><span class="type-signature"></span></h4>
+    
+
+    
+
+
+
+<div class="description">
+    <p>Funktion wird aufgerufen sobald Nutzer im Suchfeld der Mentoren einen oder mehrere Zeichen eingegeben hat und
+die Taste wieder loslässt (onkeyup).
+Funktion zum Suchen der Mentoren
+Funktion vergleicht die im Suchfeld eingetragene Zeichenkette mit allen Einträgen der Tabelle Mentoren
+und filtert dementsprechend</p>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="mentor_main.js.html">mentor_main.js</a>, <a href="mentor_main.js.html#line86">line 86</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+            
+
+    
+
+    
+    <h4 class="name" id="setChanged"><span class="type-signature"></span>setChanged<span class="signature">()</span><span class="type-signature"></span></h4>
+    
+
+    
+
+
+
+<div class="description">
+    <p>Funktion wird durch updateChangedAgreement() aufgerufen. Ihr wird die ID des aktuell durch den Nutzer bearbeiteten Agreements übergeben.
+Wenn 'agArray' bereits im sessionStorage existiert wird überprüft, ob die Agreement ID bereits in sessionStorage vorhanden ist
+Falls die ID noch nicht existiert, wird sie der sessionStorage hinzugefügt.
+Wenn es kein 'agArray' in der sessionStorage gibt wird dieses mit der Agreement ID erzeugt.</p>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="institute_modal_edit_agreement.js.html">institute_modal_edit_agreement.js</a>, <a href="institute_modal_edit_agreement.js.html#line243">line 243</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+            
+
+    
+
+    
+    <h4 class="name" id="setCheckbox"><span class="type-signature"></span>setCheckbox<span class="signature">()</span><span class="type-signature"></span></h4>
+    
+
+    
+
+
+
+<div class="description">
+    <p>Funktion wird durch loadMentor() aufgerufen
+Falls der Parameter active 1 oder 0 ist wird die Checkbox im Bearbeiten-Modal auf checked oder nicht checked gesetzt</p>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="mentor_modal_edit.js.html">mentor_modal_edit.js</a>, <a href="mentor_modal_edit.js.html#line56">line 56</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+            
+
+    
+
+    
+    <h4 class="name" id="setRestrictionChange"><span class="type-signature"></span>setRestrictionChange<span class="signature">()</span><span class="type-signature"></span></h4>
+    
+
+    
+
+
+
+<div class="description">
+    <p>Funktion wird durch trackRestrictionChange() aufgerufen.
+Ihr werden der key (Bezeichnung) des veränderten Werts, der Wert selbst und die ID der betroffenen Restriktion übergeben.
+Diese Daten werden unter newRestrictions in der SessionStorage gespeichert.</p>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="institute_modal_edit_restriction.js.html">institute_modal_edit_restriction.js</a>, <a href="institute_modal_edit_restriction.js.html#line97">line 97</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+            
+
+    
+
+    
+    <h4 class="name" id="setupFilter"><span class="type-signature"></span>setupFilter<span class="signature">()</span><span class="type-signature"></span></h4>
+    
+
+    
+
+
+
+<div class="description">
+    <p>Auswahlmöglichkeiten für die Dropdowns der Filter 'Land', 'Fakultät' und 'Vertragstyp' in der Hauptansicht
+institutes.html aus Datenbank laden.
+Ebenso in den Dropdowns der Filter in den Modalen 'Bearbeiten' und 'Anlegen'. Im Modal 'Bearbeiten' in der Ansicht
+'Partnerschaftsverträgeansicht' findet sich zusätzlich das Dropdown 'Mentor', welches ebenfalls beladen wird.</p>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="filter_values_loader.js.html">filter_values_loader.js</a>, <a href="filter_values_loader.js.html#line7">line 7</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+            
+
+    
+
+    
+    <h4 class="name" id="showGuidedAgreements"><span class="type-signature"></span>showGuidedAgreements<span class="signature">()</span><span class="type-signature"></span></h4>
+    
+
+    
+
+
+
+<div class="description">
+    <p>Diese Funktion wird in der Funktion loadAgreements() aufgerufen
+Ihr wird die Anzahl der für die Hochschule bereits vorhandenen Agreement Types übergeben
+Im Modal &quot;Bearbeiten&quot; der Hochschulen wird direkt unter der Überschrift &quot;Verträge&quot; die Anzahl der Verträge als &quot;Hochschulpartnerschaften: &quot; angezeigt</p>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="institute_modal_edit_agreement.js.html">institute_modal_edit_agreement.js</a>, <a href="institute_modal_edit_agreement.js.html#line53">line 53</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+            
+
+    
+
+    
+    <h4 class="name" id="startUp"><span class="type-signature"></span>startUp<span class="signature">()</span><span class="type-signature"></span></h4>
+    
+
+    
+
+
+
+<div class="description">
+    <p>Die Funktion wird aufgerufen sobald institutes.html vollstädnig geladen wurde
+Dieser Funktion bildet den Startpunkt der Anwendung.
+Es werden die Filter bereitgesteltt und die Tabelle mit den Informationen zu den Hochschulen aus der Datenbank geladen</p>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="institutes_main.js.html">institutes_main.js</a>, <a href="institutes_main.js.html#line9">line 9</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+            
+
+    
+
+    
+    <h4 class="name" id="trackAgreementChange"><span class="type-signature"></span>trackAgreementChange<span class="signature">()</span><span class="type-signature"></span></h4>
+    
+
+    
+
+
+
+<div class="description">
+    <p>Erzeugt ein neues Session Storage Objekt sobald im Formular unter dem Button 'Agreement speichern' etwas geändert wird.
+Funktion ruft außerdem updateChangedAgreement() auf und übergibt dieser die ID des aktuellen Agreements und die ID des Textfeldes welches verändert wurde (Bsp. Mentor, Fakutltät,etc.) sowie den Wert der eingegeben wurde.</p>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="institute_modal_edit_agreement.js.html">institute_modal_edit_agreement.js</a>, <a href="institute_modal_edit_agreement.js.html#line184">line 184</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+            
+
+    
+
+    
+    <h4 class="name" id="trackMentorChange"><span class="type-signature"></span>trackMentorChange<span class="signature">()</span><span class="type-signature"></span></h4>
+    
+
+    
+
+
+
+<div class="description">
+    <p>Funktion wird durch loadMentor() aufgerufen
+Sie speichert alle Änderungen an den Daten der Mentoren im Formular 'Bearbeiten' der Mentoren im SessionStorage</p>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="mentor_main.js.html">mentor_main.js</a>, <a href="mentor_main.js.html#line145">line 145</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+            
+
+    
+
+    
+    <h4 class="name" id="trackPartnershipType"><span class="type-signature"></span>trackPartnershipType<span class="signature">()</span><span class="type-signature"></span></h4>
+    
+
+    
+
+
+
+<div class="description">
+    <p>Diese Funktion wird in der Funktion loadAgreements() aufgerufen
+Es wird mitgezählt wie viele Vertragstypen es für die jeweils aufgerufene Hochschule bereits gibt</p>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="institute_modal_edit_agreement.js.html">institute_modal_edit_agreement.js</a>, <a href="institute_modal_edit_agreement.js.html#line40">line 40</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+            
+
+    
+
+    
+    <h4 class="name" id="trackRestrictionChange"><span class="type-signature"></span>trackRestrictionChange<span class="signature">()</span><span class="type-signature"></span></h4>
+    
+
+    
+
+
+
+<div class="description">
+    <p>Funktion wird durch insertRestriktion() aufgerufen.
+Ihr wird das vom Nutzer veränderte Feld der aktuelle Zeile der Restriktions und deren Inhalt übergeben
+Wenn ein Wert einer Restriktion verändert wurde, werden die geänderten Daten an die Funktion setRestrictionChange() gesendet</p>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="institute_modal_edit_restriction.js.html">institute_modal_edit_restriction.js</a>, <a href="institute_modal_edit_restriction.js.html#line87">line 87</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+            
+
+    
+
+    
+    <h4 class="name" id="updateChangedAgreement"><span class="type-signature"></span>updateChangedAgreement<span class="signature">()</span><span class="type-signature"></span></h4>
+    
+
+    
+
+
+
+<div class="description">
+    <p>Wird durch trackAgreementChange aufgerufen und erhält die ID des aktuellen Agreements und die ID des Textfeldes welches verändert wurde (Bsp. Mentor, Fakutltät,etc.) sowie den Wert der eingegeben wurde.
+Wenn es eine agreementID gibt, werden die Werte dieser entsprechend der Nutzereingabe verändert
+anderfalls wird eine neue Session Storage erzeugt.</p>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="institute_modal_edit_agreement.js.html">institute_modal_edit_agreement.js</a>, <a href="institute_modal_edit_agreement.js.html#line195">line 195</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+            
+
+    
+
+    
+    <h4 class="name" id="validateForm"><span class="type-signature"></span>validateForm<span class="signature">()</span><span class="type-signature"></span></h4>
+    
+
+    
+
+
+
+<div class="description">
+    <p>Im Modal 'Partnerhochschule anlegen' den Speichern Button auf 'disable' setzen solange keine englische Bezeichnung eingetragen wurde</p>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="institute_modal_add.js.html">institute_modal_add.js</a>, <a href="institute_modal_add.js.html#line4">line 4</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+    
+
+    
+
+    
+</article>
+
+</section>
+
+
+
+
+</div>
+
+<nav>
+    <h2><a href="index.html">Home</a></h2><h3>Global</h3><ul><li><a href="global.html#addButtonEvent">addButtonEvent</a></li><li><a href="global.html#addFilterChangeEvents">addFilterChangeEvents</a></li><li><a href="global.html#addNewAgreement">addNewAgreement</a></li><li><a href="global.html#addNewRestToNewAg">addNewRestToNewAg</a></li><li><a href="global.html#agreementFilter">agreementFilter</a></li><li><a href="global.html#cacheMentors">cacheMentors</a></li><li><a href="global.html#checkAdmin">checkAdmin</a></li><li><a href="global.html#checkIfNew">checkIfNew</a></li><li><a href="global.html#checkIfUpdated">checkIfUpdated</a></li><li><a href="global.html#checkInput">checkInput</a></li><li><a href="global.html#checkNewRestForNewAgreement">checkNewRestForNewAgreement</a></li><li><a href="global.html#checkProp">checkProp</a></li><li><a href="global.html#clearAgreementSpace">clearAgreementSpace</a></li><li><a href="global.html#clearSessionStorage">clearSessionStorage</a></li><li><a href="global.html#createAgreementObject">createAgreementObject</a></li><li><a href="global.html#createDifferenceArray">createDifferenceArray</a></li><li><a href="global.html#createNewAgreementObj">createNewAgreementObj</a></li><li><a href="global.html#createObjectInstitute">createObjectInstitute</a></li><li><a href="global.html#createRestriction">createRestriction</a></li><li><a href="global.html#editMentorButton">editMentorButton</a></li><li><a href="global.html#functionalityAgreementFilter">functionalityAgreementFilter</a></li><li><a href="global.html#getCountries">getCountries</a></li><li><a href="global.html#getRestrictions">getRestrictions</a></li><li><a href="global.html#getStorageData">getStorageData</a></li><li><a href="global.html#insertAgreement">insertAgreement</a></li><li><a href="global.html#insertAgreementInformation">insertAgreementInformation</a></li><li><a href="global.html#insertAgreementInTable">insertAgreementInTable</a></li><li><a href="global.html#insertCountries">insertCountries</a></li><li><a href="global.html#insertFac">insertFac</a></li><li><a href="global.html#insertInstitutes">insertInstitutes</a></li><li><a href="global.html#insertMentor">insertMentor</a></li><li><a href="global.html#insertRestriction">insertRestriction</a></li><li><a href="global.html#instituteButtonEvents">instituteButtonEvents</a></li><li><a href="global.html#instituteObjectUpdated">instituteObjectUpdated</a></li><li><a href="global.html#loadAgreements">loadAgreements</a></li><li><a href="global.html#loadAll">loadAll</a></li><li><a href="global.html#loadCourse">loadCourse</a></li><li><a href="global.html#loadCourseDropdown">loadCourseDropdown</a></li><li><a href="global.html#loadMentor">loadMentor</a></li><li><a href="global.html#loadMentorDropdown">loadMentorDropdown</a></li><li><a href="global.html#loadModal">loadModal</a></li><li><a href="global.html#makeRowClickable">makeRowClickable</a></li><li><a href="global.html#mentorButtonFunctionality">mentorButtonFunctionality</a></li><li><a href="global.html#mentorInsert">mentorInsert</a></li><li><a href="global.html#modalEvents">modalEvents</a></li><li><a href="global.html#newRestriction">newRestriction</a></li><li><a href="global.html#postData">postData</a></li><li><a href="global.html#returnAgreement">returnAgreement</a></li><li><a href="global.html#saveMentorButton">saveMentorButton</a></li><li><a href="global.html#searchMentor">searchMentor</a></li><li><a href="global.html#setChanged">setChanged</a></li><li><a href="global.html#setCheckbox">setCheckbox</a></li><li><a href="global.html#setRestrictionChange">setRestrictionChange</a></li><li><a href="global.html#setupFilter">setupFilter</a></li><li><a href="global.html#showGuidedAgreements">showGuidedAgreements</a></li><li><a href="global.html#startUp">startUp</a></li><li><a href="global.html#trackAgreementChange">trackAgreementChange</a></li><li><a href="global.html#trackMentorChange">trackMentorChange</a></li><li><a href="global.html#trackPartnershipType">trackPartnershipType</a></li><li><a href="global.html#trackRestrictionChange">trackRestrictionChange</a></li><li><a href="global.html#updateChangedAgreement">updateChangedAgreement</a></li><li><a href="global.html#validateForm">validateForm</a></li></ul>
+</nav>
+
+<br class="clear">
+
+<footer>
+    Documentation generated by <a href="https://github.com/jsdoc/jsdoc">JSDoc 3.6.10</a> on Sun Jun 26 2022 18:02:14 GMT+0200 (Mitteleuropäische Sommerzeit)
+</footer>
+
+<script> prettyPrint(); </script>
+<script src="scripts/linenumber.js"> </script>
+</body>
+</html>

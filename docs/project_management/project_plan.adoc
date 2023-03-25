@@ -1,0 +1,185 @@
+= Projektplan: {project-name} 
+// Jens Rosenkranz <s82099@htw-dresden.de>; Pascal Thielemann <s82101@htw-dresden.de>; Patrick Matthes <s82016@htw-dresden.de >; Nico Rosenkranz <s82122@htw-dresden.de>; Luca Meißner <s82091@htw-dresden.de>; Jakob Häcker <s82048@htw-dresden.de>; Roman Patzig <s82132@htw-dresden.de>; Thanh Ha Khuong <s81983@htw-dresden.de>;
+// {localdatetime}
+// include::../_includes/default-attributes.inc.adoc[]
+// Platzhalter für weitere Dokumenten-Attribute
+
+
+== Einführung
+//Briefly describe the content of the project plan.
+
+Der Projektplan bietet dem Team die Möglichkeit, sich auf den Projektumfang, die Ziele, den anfänglichen Zeitrahmen und die Ergebnisse zu einigen. Das Team kann damit beginnen, sich selbst zu organisieren, indem es Erfolgskriterien und Arbeitsmethoden festlegt, die es anwenden will. Die Zusammenarbeit und der Konsens aller wichtigen Projektteilnehmer ist das Ziel des Projektplans.
+
+Der Projektplan dient als Orientierung und Übersicht für den gesamten Lebenszyklus des Projektes "{project-name}".
+
+In ihm werden die:
+
+* Projektorganisation, 
+* die Aufgabenverteilung, 
+* die Projektpraktiken und deren Messung, 
+* eine klare Zielstellung sowie 
+* Meilensteine, 
+* primäre Risiken, 
+* Erkenntnisse und
+* Entwicklungsfortschritte für das Projekt 
+
+definiert, analysiert und dokumentiert.
+
+Die detaillierte Planung der einzelnen Projektphasen findet im Iterationsplan statt.
+
+== Projektorganisation
+//Introduce the project team, team members, and roles that they play during this project. If applicable, introduce work areas, domains, or technical work packages that are assigned to team members. Introduce neighboring projects, relationships, and communication channels. If the project is introduced somewhere else, reference that location with a link.
+Das Team SE-Projekt-I3 setzt sich aus insgesamt acht Studierenden aus den Studiengängen Informatik, Wirtschaftsinformatik und Verwaltungsinformatik zusammen. 
+
+Die Rollen wurden von den Studierenden wie folgt eingenommen:
+
+[.landscape]
+
+<<<
+
+[%header, cols="2,1,3,2"]
+|===
+| Rolle
+| Team-Mitglied
+| Beschreibung der Aufgabe
+|Artefakte
+
+| Teamleitung
+a|
+* Luca Meißner
+* Jakob Häcker
+a| 
+* Leitung des Projekts
+* Kommunikation/ Schnittstelle mit Auftraggeber, Coach, Stakeholder, Gruppe
+* Koordination der Iterationen
+* Kontrolle des Projektfortschritts 
+a|* Projekplan
+* Iterationsplan
+* Work-Item-List
+* Essence Naviagtor
+* Vision
+
+ 
+| Analyse
+a|
+* Roman Patzig
+* Thanh Ha Khuong
+a|
+* Erkennung und Beschreibung von Kundenwünschen und -anforderungen
+* Probleme verstehen
+* Prioritäten setzen 
+a| * Glossary
+* System-Wide Requirements
+* Use Case Model
+* Domänenmodel
+
+|Implementierung
+a|
+* Pascla Thielemann
+* Jens Rosenkranz
+a| 
+* Definition Softwarearchitektur
+* Entscheidung wichtiger technischer Aspekte und Bestimmung von Rahmenbedingungen
+a| 
+* Architecture Notebook
+|Testung
+a| 
+* Patrick Matthes
+* Nico Rosenkranz 
+a| 
+* Identifizierung, Definition und Durchführung notwendiger Tests
+* Protokollierung und Auswertung der Testergebnisse
+a| * Test Cases
+|===
+
+#### Verwendete Hilfsmittel
+Alle Dokumente werden auf GitHub in einem eigens angelegten https://github.com/jay-hae/SE-Projekt-I3[Projekt-Repository] gespeichert. 
+
+Die Dokumente werden als AsciiDoc und mit Excel erstellt.
+
+Die Kommunikation innerhalb der Gruppe findet adhoc über WhatsApp und wöchtenliche Meetings auf einem eigens eingerichteten Discord-Server statt.
+
+Mit der Stabstelle Internationales haben wir über Big Blue Button kommuniziert.
+
+Protokolle werden auf der für alle Teammitglieder zugänglichen https://pentapad.c3d2.de/p/SE_Projekt_I3_Protokolle[Pentapad Webseite] festgehalten.
+
+Um einen Überblick über die akut bzw. in der akutellen Iteration zu erledigenden Aufgaben zu behalten, wird ein Excel-Dokument als Work-Items-Liste geführt.
+
+Die Aufgaben für das gesamte Projekt wird durch die verwendung des Essence Navigators begleitet.
+
+Wir haben uns für diese Hilfsmittel entschieden, da das nötige Know-How über die Bedienung im Team bereits vorhanden war und sie den Team-Mitgliedern allen ohne weiteres zur Verfügung standen.
+[.portrait]
+
+<<<
+== Praktiken und Bewertung
+//Describe or reference which management and technical practices will be used in the project, such as iterative development, continuous integration, independent testing and list any changes or particular configuration to the project. Specify how you will track progress in each practice. As an example, for iterative development the team may decide to use iteration assessments and iteration burndown reports and collect metrics such as velocity (completed work item points/ iteration).
+
+Zur erfolgreichen Durchführung des Projektes "{project-name}" wenden wir den Open Unified Process (OpenUP) an. 
+Der Projektplan besteht aus einzelnen Iterationen für die jeweils ein Iterationsplan angelegt wird. Jede Iterations soll dabei eine Zeit von circa zwei bis drei Wochen Umfassen innerhalb derer jedes Team-Mitglied die zuvor festgelegten Aufgaben erledigt. 
+
+Um einen Überblick über die einzelnen zu erledigenden Aufgaben zu behalten gleichen wir den Fortschritt unseres Projekts mit Hilfe des https://www2.htw-dresden.de/~anke/openup/index.htm[Essence-Navigators] und den darin zur Verfügung gestellten Checkliste ab. Das Ergebnis kann in der nächsten Abbildung eingesehen werden.
+
+image::Essence_Navigator_Screenshot.PNG[]
+
+Seit dem 2. Semster wurde eine Handlungs Richtline für die wichtigsten Team internen Mechanismen eingführt, damit eine transparentere Arbeitsweise, ein geringerer Kommuniktionsaufwand und ein geregelteres Arbeiten statt finden kann.
+== Meilensteine und Ziele
+//Define and describe the high-level objectives for the iterations and define milestones. For example, use the following table to lay out the schedule. If needed you may group the iterations into phases and use a separate table for each phase
+
+
+
+
+[%header, cols="1,3a,2,1"]
+|===
+| Iteration
+| Hauptziele/Meilensteine
+| Zeitraum
+| Zielumfang
+
+| I1
+|
+* Erste UseCases anlegen
+* Risk List Anlegen
+* Mit Essence Navigator Vertraut machen / Aktuellen Stand eintragen
+* Glossar Anlegen
+* Vision beginnen
+
+| 01.12.2021 - 15.12.2021
+| 5
+
+| I2
+|
+* Use Cases für die Hauptfunktionalitäten im Detail beschreiben
+* Aktivitätsdiagramme und Wireframes der Use Cases
+* Vision ist (für den aktuellen Stand) vollständig und detailliert ausgearbeitet
+* Glossar beinhält und erklärt alle wesentlichen Begriffe
+| 15.12.2021 - 22.12.2021
+| 7
+
+| I3
+|
+* Beginn der Use Cases-Definition
+
+| 23.12.2021 - 22.12.2021
+| 7
+|===
+
+
+== Deployment
+//Outline the strategy for deploying the software (and its updates) into the production environment.
+
+Das System wird vom Laborbereich der Informatik auf einer virtuellen Maschine betrieben. Alle wichtigen Installationen auf der virtuellen Maschine wurden schon während der Entwicklung und vor dem Deployment durchgeführt. An den Kunden wird die URL zum Webfrontend auf der Virtuellen Maschine sowie die entsprechenden Zugangsdaten übergeben. 
+
+
+== Erkenntnisse (Lessons learned)
+//List lessons learned from the retrospective, with special emphasis on actions to be taken to improve, for example: the development environment, the process, or team collaboration.
+
+
+Im laufe des ersten Semesters und somit der ersten Hälfte des Projekts haben wir festgestellt, dass es sehr wichtig ist sowohl innerhalb des Teams als auch mit den Kunden und dem Betreuer unserers Projektes zu kommunizieren. Es gilt durch regelmäßigen Austausch und offene Kommunikation Sicherheit über ein gemeinsames Verständnis der vorliegeneden Aufgabe zu schaffen.
+
+Probleme bei der Erfüllung der Aufgaben sollten frühzeitig benannt und im Team gelöst werden. Jedes Team-Mitglied muss die Verantwortung für die ihm/ihr übertragenen Aufgaben übernehmen. Die Verantwortung zu übernehmen heißt an dieser Stelle nicht, diel Aufgabe allein zu bewältigen sondern den organisatorischen sowie zeitlichen Überblick zu behalten.
+
+Während es zunächst als zusätzliche Herausforderung empfunden werden kann, den Prinzipien des OpenUP zu folgen und damit jeden Schritt des Software Entwicklungsprozesses im Vorfeld theoretisch zu entwickeln und gleichzeitig zu dokumentieren, stellt sich bei einem Projekt dieser Größenordnung schnell heraus, dass es ohne die Einhaltung dieser Prinzipien unmöglich ist effektiv im Team zusammenzuarbeiten.
+
+Nur durch klare Kommunikatione und umfassende Dokumentation, kann sichergestellt werden, die Risiken des Scheiterns des Projektes zum Beispiel durch den Ausfall eines Team-Mitglied zu minimieren.
+
+

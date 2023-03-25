@@ -1,0 +1,54 @@
+//Nutzen Sie dieses Template als Grundlage für die Spezifikation *einzelner* Use-Cases. Diese lassen sich dann per Include in das Use-Case Model Dokument einbinden (siehe Beispiel dort).
+
+== Use-Case: In System Einloggen (UC01)
+
+=== Kurzbeschreibung
+Bei diesem Use Case soll den Mitarbeitern per Authentifizierung der Zugang zum System gewährt werden.
+
+=== Kurzbeschreibung der Akteure
+==== Mitarbeiter Stabsstelle Internationales
+Sind bei der Stabsstelle Internationales angestellt. Sie möchten auf das Verwaltungsfrontend zugreifen.
+
+=== Vorbedingungen
+Der Mitarbeiter wählt eine dem Verwaltungsfrontend zugehörige URL im Browser. Sie befindet sich im Netz der HTW Dresden. Der Mitarbeiter darf noch nicht eingeloggt sein. Unterteilt wird in die Leitung und die Mitarbeiter. 
+
+=== Standardablauf (Basic Flow)
+//Der Standardablauf definiert die Schritte für den Erfolgsfall ("Happy Path")
+
+. Der Use Case beginnt, wenn der jeweilige Mitarbeiter innerhalb des HTW-Netzes auf das Verwaltungsfrontend zugreifen will
+. WHILE Login nicht erfolgreich
+.. System erfragt benötigte Login Daten
+.. Datenbank-Nutzername + zugehöriges Kennwort eingeben 
+.. Eingegebene Daten an System übermitteln
+.. System wertet die Daten aus und liefert entsprechende Antwort
+. Leitung oder Mitarbeiter wird auf die Startseite des Verwaltungsfrontends weitergeleitet
+
+=== Wesentliche Szenarios
+//Szenarios sind konkrete Instanzen eines Use Case, d.h. mit einem konkreten Akteur und einem konkreten Durchlauf der o.g. Flows. Szenarios können als Vorstufe für die Entwicklung von Flows und/oder zu deren Validierung verwendet werden.
+
+==== Erfolgreicher Login
+* Szenario 1.1: Der Mitarbeiter befindet sich im HTW-Netz und ist derzeit nicht eingeloggt.
+* Szenario 1.2: Der Mitarbeiter authentifiziert sich und übermittelt die Daten an das System.
+* Szenario 1.3: Das System bestätigt diese Daten und gewährt dem Mitarbeiter Zugang zur Anwendung.
+* Szenario 1.4: Weiterleiten der Mitarbeiter auf die Startseite der Anwendung.
+
+=== Gescheiterter Login
+* Szenario 2.1: Der Mitarbeiter befindet sich im HTW-Netz und ist derzeit nicht eingeloggt.
+* Szenario 2.2: Der Mitarbeiter authentifiziert sich und übermittelt die Daten an das System.
+* Szenario 2.3: Das System lehnt die Daten ab, der Nutzer bekommt keinen Zugang.
+
+=== Kein Zugang zum Verwaltungsfrontend
+* Szenario 3.1: Der Mitarbeiter befindet sich nicht HTW-Netz.
+* Szenario 3.2: Es wird kein Zugriff gewährt, da sich die zugreifende Person außerhalb des erforderlichen Netzes befindet.
+
+=== Nachbedingungen
+Nach erfolgreichem Abschluss des Use Cases lautet der Ist-Zustand wie folgt:
+
+* Der Mitarbeiter befindet sich nun in einer aktiven Session 
+* Der Zugriff zum Verwaltungsfrontend wurde gestattet
+
+=== Besondere Anforderungen
+//Besondere Anforderungen können sich auf nicht-funktionale Anforderungen wie z.B. einzuhaltende Standards, Qualitätsanforderungen oder Anforderungen an die Benutzeroberfläche beziehen.
+
+==== Zugangssperre
+Der Zugang zum System darf nur innerhalb des HTW-Netzes erfolgen. Die Zugangskontrolle auf das HTW-Netz wird durch das Rechenzentrum bereitgestellt.

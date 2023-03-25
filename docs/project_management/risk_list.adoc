@@ -1,0 +1,32 @@
+= Risikoliste: {project-name} 
+// Jens Rosenkranz <s82099@htw-dresden.de>; Pascal Thielemann <s82101@htw-dresden.de>; Patrick Matthes <s82016@htw-dresden.de >; Nico Rosenkranz <s82122@htw-dresden.de>; Luca Meißner <s82091@htw-dresden.de>; Jakob Häcker <s82048@htw-dresden.de>; Roman Patzig <s82132@htw-dresden.de>; Thanh Ha Khuong <s81983@htw-dresden.de>;
+{localdatetime}
+include::../_includes/default-attributes.inc.adoc[]
+:imagesdir: images
+
+// tag::include_update[]
+
+In diesem Dokument sind die wesentlichen Risiken des Projekts aufgeführt.
+
+
+== Attribute
+
+Dabei werden folgende Attribute verwendet:
+
+* *Typ*: Ressourcen, Geschäftlich, Technisch, Zeitlich
+* *Auswirkung/Impact (IMP)*: Wert zwischen 1 (niedrig) und 5 (hoch), der die Auswirkungen auf das Projekt angibt, wenn das Risiko eintritt
+* *Wahrscheinlichkeit/Propability (PRB)*: Prozentangabe für die Eintrittswahrscheinlichkeit des Risikos
+* *Stärke/Magnitude (MAG)*: Produkt aus Auswirkung und Wahrscheinlichkeit (damit kann die Liste sortiert werden)
+
+== Risiken
+
+Die Risiken einer erfolgreichen Durchführung des Projekts sind in folgender Tabelle: risk.xlsx dargestellt. Zur Detailbetrachtung sollte diese in MS Excel geöffnet werden. 
+
+image::risks.png[]
+
+// Die inkludierte csv-Datei "risks.csv" verwendet `;` Semmikolons als Trennzeichen. Achten Sie beim Export als csv-Datei auf das Angeben des entsprechenden Trennzeichens. Verwenden Sie stattdessen `,` Kommas, kann das Tabellenattribut `separator=` weggelassen werden oder muss entprechend angepasst werden.
+
+
+// PDF-Export: Seite zurück zum Hochformat
+[.portrait]
+<<<
